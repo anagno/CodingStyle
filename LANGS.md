@@ -1,5 +1,5 @@
  Languages
 
 #* [English](en/)
-#* [Deutsch](de/)
+* [Deutsch](de/)
 * [Ελληνικά](el/)
