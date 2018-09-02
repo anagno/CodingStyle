@@ -12,8 +12,8 @@ gitbook install && gitbook build
 cp -R _book/* .
 
 # remove 'node_modules' and '_book' directory
-rm -R node_modules/*
-rm -R _book/*
+rm -R node_modules/
+rm -R _book/
 
 # removing md files because they are causing problems with github
 rm -R *.md
