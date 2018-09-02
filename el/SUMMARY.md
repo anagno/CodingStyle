@@ -34,5 +34,5 @@
 	general_programming_practices/magic_numbers.md)
     * [Σύγκριση με βάση το αριστερό μέλος](
 	general_programming_practices/comparison.md)
-* [Εφαρμογή και συμπεράσματα](README.md)
+* [Εφαρμογή και συμπεράσματα](conclusion.md)
 
