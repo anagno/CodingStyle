@@ -15,5 +15,4 @@
 * [Γενικές πρακτικές προγραμματισμού](
 	general_programming_practices/README.md)
 * [Εφαρμογή και συμπεράσματα](README.md)
-* [Βιβλιογραφία](../References.md)
 

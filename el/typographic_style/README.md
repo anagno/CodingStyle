@@ -5,14 +5,3 @@
 αριθμό από στυλ προγραμματισμού. Σε αυτή την ενότητα θα παρατεθούν αυτά ακριβώς τα
 στοιχεία.
 
-{% include "./typographic_style.md" %}
-
-{% include "./indentation.md" %}
-
-{% include "./alignment.md" %}
-
-{% include "./spaces.md" %}
-
-{% include "./braces.md" %}
-
-
