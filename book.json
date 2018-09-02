@@ -14,7 +14,8 @@
         "codeblock-label",
         "sectionx",
 	"bibtex-indexed-cite",
-	"image-captions"
+	"image-captions",
+	"include-codeblock","ace"
     ],
     "pluginsConfig": {
         "richquotes": {
@@ -34,6 +35,11 @@
         },
 	"image-captions": {
             "caption": "_CAPTION_"
-	}
+	},
+        "include-codeblock": {
+            "template": "ace",
+            "unindent": true,
+            "theme": "monokai"
+        }
     }
 }
