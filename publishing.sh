@@ -1,3 +1,4 @@
+
 # checkout to the gh-pages branch
 git checkout gh-pages
 
@@ -11,17 +12,16 @@ gitbook install && gitbook build
 cp -R _book/* .
 
 # remove 'node_modules' and '_book' directory
-git clean -fx node_modules
-git clean -fx _book
+rm -R node_modules/*
+rm -R _book/*
 
 # removing md files because they are causing problems with github
-git rm -r --cached **/**/**/**/*.md
-git rm -r --cached **/**/**/*.md
-git rm -r --cached **/**/*.md
-git rm -r --cached **/*.md
-git rm -r --cached *.md
+rm -R *.md
+rm -R **/*.md
+rm -R **/**/*.md
 
 # commit
+git add .
 git commit -a -m "Update docs"
 
 # push to the origin
