@@ -15,7 +15,8 @@
         "sectionx",
 	"bibtex-indexed-cite",
 	"image-captions",
-	"include-codeblock","ace"
+	"include-codeblock","ace",
+	"insert-logo"
     ],
     "pluginsConfig": {
         "richquotes": {
@@ -40,6 +41,10 @@
             "template": "ace",
             "unindent": true,
             "theme": "monokai"
+        },
+	"insert-logo": {
+            "url": "../../images/coding_style.png",
+            "style": "background: none;"
         }
     }
 }
