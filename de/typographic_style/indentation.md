@@ -1,23 +1,23 @@
-## [Εσοχές του κώδικα](#indentation)
+## [Codeeinzüge](#indentation)
 
-Οι εσοχές στον κώδικα βοηθούν στον προσδιορισμό της ροής του προγράμματος.
-Συγκεκριμένα οι εσοχές χρησιμοποιούνται για να επιτρέψουν στον αναγνώστη του 
-κώδικα να καθορίσει το επίπεδο ένθεσης μίας δήλωσης με μία ματιά και για να
-οριοθετήσουν λογικά μπλοκ κώδικα. Για να είναι χρήσιμες, οι εσοχές πρέπει να είναι
-συνεπής και να χρησιμοποιείται πάντα ο ίδιος αριθμός σε όλο το πρόγραμμα (ή
-τουλάχιστον στο ίδιο αρχείο του προγράμματος). Συνήθως αναφέρονται ότι οι 
-εσοχές πρέπει να είναι μεταξύ 2 και 5 κενών 
-({{ "wiki:Programming_style" | cite }}, {{ "sutter2004c" | cite }}).
-Παρακάτω ακουλουθούν δύο παραδείγματα που στο ένα χρησιμοποιούνται εσοχές ενώ 
-στο άλλο όχι:
+Die Codeeinzüge helfen bei der Programmflussbestimmung. Genauer gesagt werden
+die Codeeinzüge gebraucht, um dem Codeleser zu erlauben, den Grad der 
+Schrifteinzüge mit einem Blick festzusetzen und logische Codeblocks 
+einzugrenzen. Um nützlich zu sein, müssen die Einzüge konsistent sein und 
+immer die gleiche Zahl im ganzen Programm gebraucht werden (oder wenigstens
+in der gleichen Programmdatei). Gewöhnlich wird erwähnt, dass die Einzüge 
+zwischen 2 und 5 Schriftabständen sein müssen 
+({{ "wiki:Programming_style" | cite }}, {{ "sutter2004c" | cite }}),
+{{ "site:codding_matters" | cite }}).
+Weiter unten gibt es zwei Beispiele, wobei im ersten  Einzüge gebraucht werden, während im anderen keine:
 
-[include, title:"Παράδειγμα εσοχών (1)"](../../code_examples/identation_1.cpp)
+[include, title:"Codeeinzüge (1)"](../../code_examples/identation_1.cpp)
 
-και
+und
 
-[include, title:"Παράδειγμα εσοχών (2)"](../../code_examples/identation_2.cpp)
+[include, title:"Codeeinzüge (2)"](../../code_examples/identation_2.cpp)
 
-Το πρώτο παράδειγμα είναι πιο εύκολο να διαβαστεί μιας και κάθε λογικό κομμάτι του
-κώδικα ξεχωρίζει. Επομένως οι εσοχές στον κώδικα βοηθούν στις εμφολιασμένες εντολές.
+Das erste Beispiel ist leichter zu lesen, da jedes logische Code-Teil 
+herausragt. Folglich helfen die Codeeinzüge bei den eingezogenen Befehlen. 
 
 {% references %} {% endreferences %}

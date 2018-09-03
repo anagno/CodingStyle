@@ -1,20 +1,21 @@
-## [Τυπογραφικό στυλ - Εμφάνιση κώδικά](#typographic_style)
+## [Druckstil – Codeseherscheinung](#typographic_style)
 
-Το προγραμματιστικό στυλ συνήθως ασχολείται και με την οπτική εμφάνιση του πηγαίου
-κώδικα, με στόχο να απαιτείται λιγότερη προσπάθεια από τους προγραμματιστές για την
-αναγνώριση και την εξαγωγή χρήσιμων πληροφοριών από τον κώδικα . Όταν το πρόγραμμα
-ολοκληρωθεί, σπάνια ένας προγραμματιστής θα το διαβάσει από πάνω προς τα κάτω. Στον
-εντοπισμό σφαλμάτων και στην βελτιστοποίηση του προγράμματος, οι προγραμματιστές
-παραλείπουν συχνά μεγάλα τμήματα του κώδικα, προκειμένου να βρουν αυτό που ψάχνουν.
-Μια καλή αναλογία είναι αν συγκριθεί ο πηγαίος κώδικας με ένα λεξικό. Αν οι λέξεις
-σε ένα λεξικό δεν ήταν σε αλφαβητική σειρά και με έντονη γραφή τότε ο εντοπισμός
-μιας συγκεκριμένης λέξης θα ήταν πολύ δύσκολος. Ομοίως λοιπόν και στον πηγαίο
-κώδικα, η οπτική εμφάνιση του κώδικα βοηθά στην μετέπειτα επεξεργασία του
+Die Kodierungskonventionen beschäftigen sich meistens mit der Seherscheinung
+des Quellcodes, so dass-damit weniger Bemühung von den jeweiligen Entwicklern
+zur Erkennung und Ausführung nützlicher Informationen aus dem Quellecode nötig
+erforderlich ist. Wenn das Programm vervollständigt ist, wird es ein Entwickler
+selten von oben nach unten lesen. Während der Fehlerfeststellung und
+Programmoptimierung  lassen die Entwickler oft große Codeteile weg, um zu 
+finden, was sie suchen. Es ist genau so, wie wenn der Quellcode mit einem 
+Lexikon-Wörterbuch verglichen wird. Wenn die Wörter in einem Lexikon nicht in
+alphabetischer Folge und fett gedruckt wären, dann wäre die Lokalisierung eines
+gewissen Wortes  sehr schwierig. Gleichfalls  in der Quellcode hilft also die
+Quellcodeseherscheinung bei seiner späteren Bearbeitung
 ({{ "wiki:Programming_style" | cite }}, {{ "site:codding_matters" | cite }}).
 
-Το τυπογραφικό στυλ έχει αποδειχθεί ότι επηρεάζει την δυνατότητα κατανόησης του
-πηγαίου κώδικα και η συνεπής εφαρμογή κάποιου τυπογραφικού στυλ ενισχύει την
-κατανόηση ενός προγράμματος {{ "Mohan" | cite }}.
+Es ist bewiesen worden, dass der Druckstil die Verständnismöglichkeit des
+Quellcodes beeinflusst und die konsistente Anwendung eines Druckstils das
+Programmverständnis verstärkt {{ "Mohan" | cite }}.
 
 {% references %} {% endreferences %}
 

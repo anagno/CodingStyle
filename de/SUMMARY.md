@@ -1,16 +1,16 @@
 # Περιεχόμενα
 
 * [Einführung](README.md)
-* [Στοιχεία καλού προγραμματιστικού στυλ](typographic_style/README.md)
-    * [Τυπογραφικό στυλ - Εμφάνιση κώδικά](
+* [Κennzeichen  für gute Programmierpraktiken](typographic_style/README.md)
+    * [Druckstil – Codeseherscheinung](
 	typographic_style/typographic_style.md)
-    * [Εσοχές του κώδικα](
+    * [Codeeinzüge](
 	typographic_style/indentation.md)
-    * [Κατακόρυφη στοίχιση](
+    * [Vertikale Ausrichtung](
 	typographic_style/alignment.md)
-    * [Διαστήματα](
+    * [Abstände](
 	typographic_style/spaces.md)
-    * [Αγκύλες](
+    * [Klammern](
 	typographic_style/braces.md)
 * [Γενικές πρακτικές προγραμματισμού](
 	general_programming_practices/README.md)

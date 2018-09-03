@@ -1,30 +1,35 @@
-## [Αγκύλες](#braces)
+## [Klammern](#braces)
 
-Στις γλώσσες προγραμματισμού που επιτρέπουν αγκύλες, έχει καταστεί κοινή πρακτική να χρησιμοποιούνται ακόμα και όταν η χρήση τους δεν είναι απαραίτητη. Η χρήση τους επιτρέπεται σε όλους τους βρόγχους επανάληψης και δομές ελέγχου. Για παράδειγμα:
+In den Programmiersprachen, die Klammern erlauben, ist es üblich, dass sie 
+gebraucht werden, selbst wenn ihr Gebrauch nicht notwendig ist. Ihr Gebrauch
+ist in-bei allen Wiederholungsschleifen und Kontrollstrukturen erlaubt. 
+Zum Beispiel: 
 
-[include, title:"Αγκύλες (1)"](../../code_examples/braces_1.cpp)
+[include, title:"Klammern (1)"](../../code_examples/braces_1.cpp)
 
-Με την χρήση των αγκυλών αποτρέπονται λογικά σφάλματα, τα οποία συνήθως είναι και
-χρονοβόρα να εντοπιστούν, όπως όταν ένα ερωτηματικό τερματισμού εισάγεται κατά 
-λάθος στον πηγαίο κώδικα:
+Bei Klammergebrauch kann man logische Fehler abwenden, die meistens auch
+zeitaufwändig δαπανηρό zeitraubend ληστρικό zu lokalisieren sind, wie wenn 
+ein Zielfragezeichen im  Quellcode fälschlicherweise eingeführt wird.
 
-[include, title:"Αγκύλες (2)"](../../code_examples/braces_2.cpp)
+[include, title:"Klammern (2)"](../../code_examples/braces_2.cpp)
  
-Ένα παρόμοιο λάθος είναι όταν προστίθεται μια επιπλέον γραμμή πριν την πρώτη γραμμή:
+Ein ähnlicher Fehler kommt vor, wenn eine zusätzliche Zeile vor die erste
+Zeile hinzugefügt wird:
 
-[include, title:"Αγκύλες (3)"](../../code_examples/braces_3.cpp)
+[include, title:"Klammern (3)"](../../code_examples/braces_3.cpp)
 
-Γι` αυτό το λόγο έχει καθιερωθεί η χρήση των αγκυλών όπως στον αλγόριθμο:
+Aus diesem Grund ist der Klammergebrauch etabliert-eingeführt worden, wie im:
 
-[include, title:"Αγκύλες (4)"](../../code_examples/braces_4.cpp)
+[include, title:"Klammern (4)"](../../code_examples/braces_4.cpp)
 
-Στον παραπάνω αλγόριθμο φαίνεται σαφώς τόσο η αρχή όσο και το τέλος τους μπλοκ
-εντολών. Υπάρχουν και άλλες μεθοδολογίες τοποθέτησης των αγκυλών (όπως π.χ. η 
-αρχική αγκύλη να μπαίνει αμέσως μετά την βρόγχο επανάληψης όπως και στο πρώτο
-παράδειγμα οι οποίες δεν διαφέρουν από τον τρόπο που περιγράφτηκε στον παραπάνω
-αλγόριθμο. Η μικροδιαφορές αυτές δεν επηρεάζουν την αναγνωσιμότητα του κώδικα 
-αλλά θα πρέπει να υπάρχει συνέπεια στην χρήση των αγκυλών 
-{{ "sutter2004c" | cite }}.
+Im weiter oben Algorithmus sowohl der Anfang als auch das Ende des 
+Befehleblocks deutlich zu sehen. Es gibt auch weitere Methoden zum Aufstellen
+der Klammern (wie z.B. die erste/anfängliche Klammer wird gleich nach der
+Wiederholungsschleife aufgestellt, wie auch in dem ersten Algorithmus), die
+sich nicht von der Weise unterscheiden, die im oben liegenden Algorithmus 
+beschrieben werden. Diese kleinen Unterschiede beeinflussen die 
+Quellcodelesbarkeit nicht, aber es muss beim Klammergebrauch eine gewisse
+Konsequenz geben {{ "sutter2004c" | cite }}.
 
 {% references %} {% endreferences %}
 

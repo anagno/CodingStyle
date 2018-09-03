@@ -1,33 +1,35 @@
-Το στυλ που σχετίζονται με τα διαστήματα [^1] χρησιμοποιούνται για την ενίσχυση της
-αναγνωσιμότητας του πηγαίου κώδικα. Δεν υπάρχουν γνωστές μελέτες οι οποίες
-υποστηρίζουν ότι τα διαστήματα βοηθούν στην αναγνωσιμότητα του κώδικα αλλά από μία
-απλή σύγκριση του παρακάτω κώδικά φαίνεται ότι αμυδρά βοηθά στην καλύτερη κατανόηση
-του κώδικα. Για παράδειγμα {{ "wiki:Programming_style" | cite }}: 
+## Abstände
 
-[include, title:"Διαστήματα (1)"](../../code_examples/spaces_1.cpp)
+Die Kodierungskonventionen, die mit den Abständen im Zusammenhang stehen [^1],
+werden zur Verstärkung der Lesbarkeit des Quellcodes gebraucht. Es gibt keine
+bekannten Forschungen, die behaupten, dass die Abstände bei der 
+Quellcodelesbarkeit helfen würden, aber bei einem einfachen Vergleich des 
+weiter unten liegenden Codes wird es gezeigt, dass sie schwach beim besseren
+Codeverständnis helfen. Zum Beispiel {{ "wiki:Programming_style" | cite }}: 
+
+[include, title:"Abstände (1)"](../../code_examples/spaces_1.cpp)
 
 έναντι
 
-[include, title:"Διαστήματα (2)"](../../code_examples/spaces_2.cpp)
+[include, title:"Abstände (2)"](../../code_examples/spaces_2.cpp)
 
-Η χρήση των διαστημάτων στον πηγαίο κώδικα είναι όμοια με τους κανόνες της 
-αγγλικής γλώσσας. Αυτό σημαίνει ότι  {{ "site:codding_matters" | cite }}:
+Der Gebrauch von Abständen im Quellcode ist gleich wie in den Regeln der 
+englischen Sprache. Das bedeutet {{ "site:codding_matters" | cite }}:
 
-1. Τα περισσότερα βασικά σύμβολα στις γλώσσες προγραμματισμού (π.χ. "=", "+",
-κ.λ.π.) θα πρέπει να έχουν τουλάχιστον ένα διάστημα πριν και ένα διάστημα μετά από
-αυτούς με τις παρακάτω εξαιρέσεις:
-  1. Δεν εμφανίζεται διάστημα πριν από κόμμα ή πριν από ερωτηματικό.
-  1. Δεν εμφανίζεται διάστημα πριν ή μετά από τελεία.
-  1. Δεν εμφανίζεται διάστημα μεταξύ των δυαδικών τελεστών (π.χ. "->", "++").
-1. Περισσότερα από ένα κενά μπορούν να χρησιμοποιηθούν για την ευθυγράμμιση
-στοιχείων (όπως στην κατακόρυφη στοίχιση).
-1. Κενές γραμμές θα πρέπει ακόμα να χρησιμοποιούνται για να τον διαχωρισμό 
-λογικών μπλοκ κώδικάς, όπως
-  1. Στο αρχή του πηγαίου κώδικα όπου υπάρχουν οι ντιρεκτίβες include, const,
-typedef} κ.λ.π. .
-  1. και σε κομμάτια κώδικα που είναι εκτεταμένα και υπάρχουν μέσα τους 
-ξεχωριστά τμήματα κώδικα και μπορούν να διαχωριστούν με μία κενή γραμμή.
+1. Die meisten Grundsymbole in den Programmiersprachen (z.B. ”=”, ”+”, u.v.a.)
+müssen wenigstens einen  Abstand vorher-davor  und einen Abstand danach haben, 
+mit den unten liegenden Ausnahmen:
+  1. Es gibt keinen Abstand vor einem Komma oder vor einem Fragezeichen.
+  1. Es gibt keinen  Abstand vor oder nach einem Punkt.
+  1. Es gibt keinen Abstand zwischen den Binäroperatoren (z.B. ”->”, ”++”).
+1. Mehr als ein Abstand kann für die Elementausrichtung gebraucht werden 
+(wie bei der Vertikale Ausrichtung).
+1. Leere Zeilen können auch für die Separation logischer Codeblocks gebraucht 
+werden, wie
+  1. Am Anfang des Quellcodes, wo es Direktive include, const, typedef, usw. 
+gibt.
+  1. und in Quellcodestücken, die ausgedehnt sind und in denen-worin es separate Teile gibt und die durch eine leere Zeile separiert werden können.
 
-[^1]: Τα κενά (διαστήματα), τα tabs και οι νέες γραμμές (αλλαγή γραμμής) ονομάζονται διαστήματα.
+[^1]: Die Abstände, die tabs und die Zeilenwechsel heißen Abstände
 
 {% references %} {% endreferences %}

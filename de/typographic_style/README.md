@@ -1,7 +1,6 @@
-# Στοιχεία καλού προγραμματιστικού στύλ
+# Κennzeichen  für gute Programmierpraktiken
 
-Το καλό στυλ στην συγγραφή κώδικα είναι υποκειμενικό θέμα και είναι δύσκολο να
-προσδιοριστεί. Παρόλα αυτά, υπάρχουν πολλά στοιχεία που είναι κοινά σε ένα μεγάλο
-αριθμό από στυλ προγραμματισμού. Σε αυτή την ενότητα θα παρατεθούν αυτά ακριβώς τα
-στοιχεία.
-
+Die guten Programmierpraktiken beim Quellcodeverfassen ist eine subjektive
+Angelegenheit und sie sind nur schwierig zu bestimmen. Trotzdem gibt es viele
+Bestandteile-Elemente, die bei einer großen Zahl von Kodierungskonventionen
+üblich sind. In diesem Kapitel werden diese Bestandteilen vorgestellt werden.

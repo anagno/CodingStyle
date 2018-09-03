@@ -1,29 +1,29 @@
-## [Κατακόρυφη στοίχιση](#alignment)
+## [Vertikale Ausrichtung](#alignment)
 
-Είναι συχνά χρήσιμο να στοιχίζονται κατακόρυφα παρόμοια στοιχεία, για να φαίνονται
-τα τυπογραφικά σφάλματα {{ "wiki:Programming_style" | cite }}. Για παράδειγμα:
+Es ist oft nützlich, dass  ähnliche Elemente vertikal  ausgerichtet werden, 
+damit die Schreibfehler sichtbar sind {{ "wiki:Programming_style" | cite }}.
+Zum Beispiel:
 
+[include, title:"Vertikale Ausrichtung (1)"](../../code_examples/alignment_1.cpp)
 
+und
 
-[include, title:"Κατακόρυφη στοίχιση (1)"](../../code_examples/alignment_1.cpp)
+[include, title:"Vertikale Ausrichtung (2)"](../../code_examples/alignment_2.cpp)
 
-και
+Das letzte Beispiel macht zwei Dinge intuitiv klar, die es vorher nicht waren:
 
-[include, title:"Κατακόρυφη στοίχιση (2)"](../../code_examples/alignment_2.cpp)
+* die Variablen search und replacement sind miteinander verwandt
+* und es gibt noch ein Element  in der Variable search als in der Variable
+replacement. Wenn es um irgendeinen Fehler geht, ist jetzt wahrscheinlicher, 
+dass er lokalisiert wird. 
 
-Το τελευταίο παράδειγμα κάνει δύο πράγματα διαισθητικά σαφές που πριν δεν ήταν:
+Dennoch wird bemerkt, dass es viele Argumente gegen die vertikale Ausrichtung
+gibt, wie:
 
-* οι μεταβλητές search και replacement σχετίζονται μεταξύ τους
-* και υπάρχει ένας παραπάνω όρος στην μεταβλητή search από ότι στην μεταβλητή
-replacement. Αν πρόκειται για κάποιο σφάλμα είναι πιο πιθανόν τώρα να εντοπιστεί.
-
-Ωστόσο, σημειώνετε ότι υπάρχουν πολλά επιχειρήματα κατά της κατακόρυφης 
-στοίχισης όπως:
-
-* **Ευθραυστότητα:** Εάν ένας προγραμματιστής κάνει κάποια αλλαγή στον "πίνακα" 
-και δεν τον τακτοποιήσει, έχει ως αποτέλεσμα την επιδείνωση της οπτικής εμφάνισης
-των στοιχείων, που γίνεται ακόμα χειρότερη με κάθε αλλαγή και
-* **Δυσκολία στην συντήρηση:** Η μορφοποίηση του πίνακα απαιτεί περισσότερη
-προσπάθεια για να διατηρηθεί.
+* **Zerbrechlichkeit:** Wenn ein Entwickler irgendeine Änderung auf der 
+"Tabelle" macht und sie nicht ordnet, hat das die Verschlechterung der
+Elementseherscheinung als Ergebnis, die bei jeder Änderung noch schlechter
+wird. 
+* **Schwierigkeit bei der Wartung:** Die Tabellenformatierung erfordert mehr Bemühung, um erhalten zu bleiben.
 
 {% references %} {% endreferences %}
