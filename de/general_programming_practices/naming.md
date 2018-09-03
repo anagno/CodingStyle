@@ -1,177 +1,170 @@
-# Ονοματολογία
+# Regeln der Namensgebung 
 
-Η επιλογή των ονομάτων (των αρχείων, των μεταβλητών, των συναρτήσεων, κ.λ.π.)
-είναι από τα πιο σημαντικά στοιχεία που κάνουν τον πηγαίο κώδικα κατανοητό. 
-Ο τρόπος με τον οποίο γράφουμε ένα όνομα μπορεί να μας πληροφορήσει άμεσα τί
-αντιπροσωπεύει η οντότητα αυτή όπως αν είναι μεταβλητή, συνάρτηση, σταθερά,
-κ.λ.π., χωρίς να χρειάζεται να αναζητήσουμε την δήλωση της οντότητας αυτής.
-Ακόμα τα ονόματα θα πρέπει να έχουν νόημα και να δίνουν στο προγραμματιστή 
-την δυνατότητα να κατανοήσει και να διαβάσει τον πηγαίο κώδικα με ευκολία. 
-Ένα όνομα το οποίο φαίνεται χαριτωμένο ή δακτυλογραφείται εύκολα μπορεί
-αργότερα να προκαλέσει προβλήματα σε κάποιον που προσπαθεί να κατανοήσει τον
-κώδικα. Ο πηγαίος κώδικας διαβάζεται πολλές φορές ενώ γράφεται μόνο μία. Γι`
-αυτό το λόγο η επιλογή της ονοματολογίας παίζει καθοριστικό ρόλο και το όνομα
-μιας μεταβλητής θα πρέπει να περιγράφει πλήρως και με ακρίβεια την μεταβλητή
-που αντιπροσωπεύει ({{ "site:fx_alpha" |cite }},{{ "site:taligent" |cite }},
+Die Namenswahl (von Programmdateien, Variablen, Funktionen, usw.) ist eines
+der wichtigsten Elemente, die den Quellcode verständlicher macht. Die Weise,
+worauf man einen Variablennamen schreibt, kann uns unmittelbar informieren,
+was dieses Element repräsentiert, wie z. B. ob eine Variable, Funktion,
+Konstant usw. ist, ohne die Registrierung dieses Elementes suchen zu müssen.
+Ferner  müssen die Namen irgendeinen Sinn haben und dem Entwickler die Möglichkeit geben, den Quellcode leichter zu begreifen und zu lesen.
+Ein Name, der anmutig ist, oder leicht zu tippen ist, kann später bei
+jemandem Probleme hervorrufen, der den Quellcode zu verstehen. Der Quellcode wird mehrmals gelesen, aber nur einmal geschrieben. Aus diesem Grund spielt
+die Namenskonventionen eine entscheidende Rolle und der Variablenname muss
+die Variable, die er repräsentiert, vollends und genau beschreiben
+({{ "site:fx_alpha" |cite }},{{ "site:taligent" |cite }},
 {{ "site:google_style" |cite }}).
 
-Οι κανόνες της ονοματολογίας είναι αρκετά αυθαίρετοι, και γι` αυτό το λόγο οι
-κανόνες που παραθέτονται πιο κάτω είναι περισσότερο προτροπές ή συμβάσεις που
-έχουν υιοθετηθεί από ένα μεγάλο κομμάτι προγραμματιστών και όχι τόσο κανόνες.
+Die Namenskonventionen sind ziemlich willkürlich, und aus diesem Grund sind
+die Konventionen, die weiter unten aufgeführt werden, eher Empfehlungen oder Konventionen, die von einem großen Entwicklerteil adoptiert worden sind, und keine Regeln. 
 
-Αυτό που έχει σημασία είναι η συνέπεια τήρησης των οποίων αποφάσεων έχουν
-παρθεί ή έχουν χρησιμοποιήσει οι αρχικοί δημιουργοί του πηγαίου κώδικα
-{{ "site:google_style" |cite }}.
+Was da von Bedeutung ist, ist die konsequente Einhaltung der etwaigen
+Konventionen, die gewählt worden sind, oder die ursprünglichen Schöpfer des
+Quellcodes gebraucht {{ "site:google_style" |cite }}.
 
-## Γενικοί κανόνες ({{ "site:google_style" |cite }},{{ "site:fx_alpha" |cite }},{{ "site:geosoft" |cite }},{{ "sutter2004c" |cite }},{{ "kernighan1988c" |cite }})
+## Generalnamenskonventionen ({{ "site:google_style" |cite }},{{ "site:fx_alpha" |cite }},{{ "site:geosoft" |cite }},{{ "sutter2004c" |cite }},{{ "kernighan1988c" |cite }})
 
 
-* Μια αποτελεσματική τεχνική για την εύρεση αντιπροσωπευτικών ονομάτων είναι η
-δήλωση με λόγια τι αντιπροσωπεύει η μεταβλητή. 
+* Eine wirksame Technik für die Auffindung repräsentativer Namen ist die
+Erklärung mit Worten, was die Variable repräsentiert.
 
-* Τα ονόματα που επιλέγονται πρέπει να είναι αντιπροσωπευτικά, έτσι ώστε ο
-κώδικας να είναι άμεσα κατανοητός. Δεν θα πρέπει να χρησιμοποιούνται
-συντομογραφίες που είναι ασαφείς ή άγνωστες σε όσους διαβάζουν τον πηγαίο
-κώδικα για πρώτη φορά. Ακόμα δεν θα πρέπει να γίνονται συντμήσεις διαγράφοντας
-γράμματα από λέξεις. Πιο κάτω ακολουθούν μερικά "καλά" και "κακά" ονόματα
-μεταβλητών.
+* Die Namen, die man wählt, müssen repräsentativ sein, so dass der Quellcode
+sofort verständlich ist. Man darf keine Abkürzungen gebrauchen, die
+denjenigen unklar oder unbekannt sind, die den Quellcode zum ersten Mal
+lesen. Ferner darf man keine Abkürzungen durch das Streichen  von
+Buchstaben innerhalb der Wörter gebrauchen. Weiter unten folgen einige "gute"
+und "schlechte" Variablennamen.
 
 [include](../../code_examples/naming_1.cpp)
 
-* Το μήκος μια μεταβλητής θα πρέπει να αντικατοπτρίζει και την εμβέλεια της.
-Μια τοπική μεταβλητή έχει περιορισμένη εμβέλεια, επομένως και το όνομα δεν
-χρειάζεται να είναι και πολύ περιγραφικό. Αντιθέτως μία παγκόσμια μεταβλητή, η
-εμβέλεια της οποίας είναι ευρεία, θα πρέπει να έχει ένα αντιπροσωπευτικό και
-περιγραφικό όνομα για να ξεχωρίζει. 
+* Die Variablenlänge muss ihre Reichweite widerspiegeln. Eine Lokal-Variable
+hat eine geringe Reichweite, folglich braucht auch der Name nicht so
+beschreibend zu sein. Im Gegenteil muss eine Global-Variable von großer
+Reichweite einen repräsentativen und beschreibenden Namen haben, damit sie
+leicht zu unterscheiden ist.
 
-* Οι συντομογραφίες και τα ακρωνύμια δεν πρέπει να είναι κεφαλαία όταν
-χρησιμοποιούνται ως ονόματα μεταβλητών.
+* Die Abkürzungen und Kurzformen müssen großgeschrieben werden, wenn sie 
+als Variablennamen gebraucht werden.
 
-* Στους επαναληπτικούς βρόχους θα πρέπει να χρησιμοποιούνται ονομασίες με
-νόημα όπως φαίνεται και στο παρακάτω παράδειγμα:
+* In der Wiederholungsschleifen müssen Namen mit bestimmter Bedeutung
+gebraucht werden, wie in den weiter unten stehenden Beispielen:
 
 [include](../../code_examples/naming_2.cpp)
 
-## Κανόνες ονοματολογίας
+## Namenskonventionen
 
-Η παρακάτω ενότητα αναφέρει μερικές από τους πιο διαδεδομένους κανόνες που
-χρησιμοποιούνται στην ονοματολογία των οντοτήτων. Κατά κύριο λόγο
-περιλαμβάνονται κανόνες που εφαρμόζονται στην C++ αλλά μπορούν να 
-γενικευτούν και στις υπόλοιπες γλώσσες προγραμματισμού.
+Die weiter oben Einheit erwähnt einige von den verbreitesten Regeln, die bei
+den Namenskonventionen gebraucht werden. In erster Linie werden Regeln für
+die C++ umfasst, aber sie können auch in die übrigen Programmsprachen
+verallgemeinert werden. 
 
-### Αρχεία
+### Programmdateien
 
-* Για τα αρχεία διαλέγουμε ένα όνομα το οποίο αντικατοπτρίζει το περιεχόμενο
-του αρχείου.
-* Τα ονόματα των αρχείων θα πρέπει να είναι όλα πεζά και μπορεί να 
-περιλαμβάνουν την κάτω παύλα (_) ή την άνω παύλα (-).
-* Τα αρχεία προγραμμάτων της c++ θα πρέπει να τελειώνουν σε .cpp και της
-σε C θα πρέπει να τελειώνουν σε .c ενώ τα αρχεία κεφαλίδων θα πρέπει να
-τελειώνουν σε .h
+* Für die Programmdateien muss man einen Namen aussuchen, der den Inhalt der
+Datei widerspiegelt.
+* Die Dateinamen müssen alle (in Klein-buchstaben sein) kleingeschrieben
+werden und sie können den Unterstrich (_) oder den Oberstrich (-) umfassen. 
+* Die Programmdateien von C++ müssen in .cpp und von C in .c, aber die 
+Header-Dateien in .h enden. 
 
 [include](../../code_examples/naming_files.cpp)
 
 ### Defines & Macros
 
-* Οι δηλώσεις επεξεργαστή και οι μακροεντολές θα πρέπει να είναι με κεφαλαία
-γράμματα. Ακόμα οι δηλώσεις επεξεργαστή για τα αρχεία θα πρέπει να τελειώνουν
-με κάτω παύλα (\_). 
+* Die Prozessordeklarationen und die Macros müssen in Großbuchstaben sein.
+Ferner müssen die Prozessordeklarationen für die Programmdateien mit einem
+Unterstrich (_) enden.
 
 [include](../../code_examples/naming_defines.cpp)
 
 
-### Μεταβλητές
+### Variable
 
-* Τα ονόματα των μεταβλητών (αγγλ. variables} είναι όλα πεζά, με παύλες 
-μεταξύ των λέξεων. 
-* Για τις παγκόσμιες μεταβλητές δεν υπάρχουν κάποιες ειδικές απαιτήσεις, 
-μιας και η χρήση τους είναι σπάνια, αλλά σε κάθε περίπτωση αν χρησιμοποιείται
-κάποια, καλό θα ήταν να ξεχωρίζεται προτάσσοντας ένα g_ ή κάποιο άλλο
-χαρακτηριστικό το οποίο θα τις ξεχωρίζει από τις τοπικές μεταβλητές.
+* Die Variablennamen (engl. Variables) sind alle in kleingeschrieben, mit
+Strichen zwischen den Wörtern.
+* Für die globalen Variablen gibt es keine besonderen Ansprüche, da ihr
+Gebrauch selten ist, aber wenn auf jeden Fall manche gebraucht wird, wäre es
+gut, differenziert zu werden, indem man ein g_ oder irgendein anderes Merkmal
+voranstellt, das sie von den Lokal-Variablen differenziert. 
 
 [include](../../code_examples/naming_variables.cpp)
 
+### Funktionen
 
-### Συναρτήσεις
-
-* Οι συναρτήσεις (αγγλ. functions) θα πρέπει να είναι camelCased[^1] και οι
-μεταβλητές να είναι όλες πεζές, με κάτω παύλες (_) μεταξύ των λέξεων.
-* Ο τύπος επιστροφής της κάθε συνάρτησης θα πρέπει να τοποθετείται σε
-διαφορετική γραμμή.
-* Πρέπει να διαλέγετε ως όνομα ένα ρήμα το οποίο αντανακλά την δράση της
-συνάρτησης. Καλό είναι να επιλέγονται ονόματα τα οποία αντανακλούν στοιχεία
-του προβλήματος και όχι την επίλυση του προβλήματος.
+* Die Funktionen (Engl. functions) müssen camelCased[^1] sein und die
+Variablen müssen  kleingeschrieben  sein, mit Unterstrich zwischen den
+Wörtern.
+* Der Rückgabetyp jeder Funktion muss in eine andere Zeile gesetzt werden.
+* Man muss ein Verb als Namen auswählen,  das die Funktionstätigkeit
+reflektiert. Man sollte Namen auswählen/es sollten Namen gewählt werden, die
+die Problemelemente reflektieren und nicht die Problemlösung. 
 
 [include](../../code_examples/naming_functions.cpp)
 
-### Ονόματα τύπων
+### Typennamen
 
-* Τα ονόματα των τύπων (αγλλ. type names) είναι CamelCased. Δηλαδή ξεκινούν
-με κεφαλαίο γράμμα και κάθε νέα λέξη να ξεκινά επίσης με κεφαλαίο, χωρίς να
-προηγείται κάτω παύλα (_).
+* Die Typennamen (Engl. Type names) sind CamelCased. Das heißt, dass sie mit
+einem Großbuchstaben anfangen und auch jedes neue Wort mit einem
+Großbuchstaben anfangen muss, ohne dass ein Unterstrich (_) davor steht.
 
 [include](../../code_examples/naming_type_names.cpp)
 
-### Δομές
+### Strukturen
 
-* Τα μέλη μίας δομής πρέπει να ονομάζονται σαν κανονικές μεταβλητές. 
+* Die Glieder/Teile einer Struktur müssen als normale Lokalvariablen
+aufgeschrieben werden.
 
 [include](../../code_examples/naming_struct.cpp)
 
 ### Enum
 
-* Τα μέλη των απαριθμητών (αγγλ. enumerations) θα πρέπει να είναι κεφαλαία,
-με παύλες μεταξύ των λέξεων. Με τα κεφαλαία γράμματα οι σταθερές αυτές
-ξεχωρίζουν σε ένα πρόγραμμα και δεν μπερδεύονται με τις απλές μεταβλητές.
+* Die Glieder der Aufzählungen (Engl. enumerations) müssen großgeschrieben
+sein, mit Strichen zwischen den Wörtern. Mit den Großbuchstaben werden diese
+Variablen in einem Programm unterschieden und sie werden nicht mit den
+einfachen Variablen verwechselt. 
 
 [include](../../code_examples/naming_enum.cpp)
 
-### Κλάσεις (1)
+### Klassen (1)
 
-* Τα τμήματα μιας κλάσης πρέπει να ταξινομούνται ως: δημόσια, προστατευμένα
-(αγγλ.public, protected) και ιδιωτικά (αγλλ. private). Έτσι οι
-προγραμματιστές που θέλουν απλώς να χρησιμοποιήσουν την κλάση να μην
-χρειάζεται να διαβάζουν και τα ιδιωτικά μέλη της κλάσης. 
+* Die Teile einer Klasse müssen folgendermaßen eingeordnet werden:
+öffentlich, geschützt (Engl. public, protected) und privat (Engl. private).
+So dass die Entwickler, die die Klasse einfach gebrauchen wollen, nicht auch
+die privaten Klassenglieder lesen müssen.
 
-* Τα ιδιωτικά μέλη των κλάσεων είναι όπως και οι απλές μεταβλητές, μόνο 
-που τελειώνουν με κάτω παύλα (_). Επισημαίνοντας το εύρος χρησιμοποιώντας
-κάτω παύλα καθιστά εύκολο τον διαχωρισμό τον μεταβλητών των κλάσεων από
-τοπικές μεταβλητές που χρησιμοποιούνται. %Αυτό είναι σημαντικό μιας και οι
-μεταβλητές των κλάσεων έχουν υψηλότερη σημασία από τις υπόλοιπες μεταβλητές
-και θα πρέπει να αντιμετωπίζονται με προσοχή από τους προγραμματιστές.
+* Die privaten Klassenglieder sind genau so wie die einfachen Variablen, nur
+dass sie mit einem Unterstrich (_) enden müssen. Wenn man die Breite
+mit einem Unterstrich markiert, macht man die Klassenvariablen-trennung 
+der gebrauchten  Lokal-Variablen leichter.
 
 [include](../../code_examples/naming_class.cpp)
 
-### Κλάσεις (2)
+### Klassen (2)
 
-* Μία κλάση πρέπει δηλώνετε σε ένα αρχείο επικεφαλίδας (αγγλ. header file)
-και να ορίζεται σε ένα πηγαίο αρχείο (αγγλ. source file) όπου τα ονόματα 
-των αρχείων ταιριάζουν με το όνομα της κλάσης καθιστώντας εύκολη την εύρεση
-των αντίστοιχων αρχείων. Το αρχείο επικεφαλίδας πρέπει να ορίζει μία
-διεπαφή, και το πηγαίο αρχείο να την υλοποιεί. 
-* Τα αρχεία που υλοποιούν τις κλάσεις έχουν κατάληξη .hpp .
-* Οι συναρτήσεις ερωτημάτων (αγγλ. accessors,mutators ή 
-συναρτήσεις get και set) πρέπει να ταιριάζουν με το όνομα της μεταβλητής 
-που προελαύνουν. 
+* Eine Klasse muss in einer Header-Datei (Engl. header file) deklariert
+und in einer Quelldatei (Engl. source file) definiert werden, deren Dateinamen so wie die Klassennamen dieselben  sind, so dass die Auffindung
+der entsprechenden Dateien leichter ist. Die Header-Datei muss eine
+Schnittstelle deklarieren und die Quelldatei muss sie realisieren.
+* Die Dateien, die die Klassen realisieren, haben die Endung .hpp .
+* Die Abfragefunktion (Engl. aceessors,mutators) oder Funktionen get und set) müssen mit dem Variablennamen gleich sein, auf den sie sich beziehen
+
 
 [include](../../code_examples/naming_class_2.cpp)
 
-## Υπο-φάκελοι
+## Unterordner
 
-Στον παρακατω πίνακα φαίνεται η τυπική δομή των φακέλων ενός τυπικού
-προγράμματος. Ομοίως και εδώ οι οι φάκελοι αυτοί είναι οι πιο
-χρησιμοποιούμενοι φάκελοι.
+In weiter unten wird die typische Ordnerstruktur eines typischen Programms
+präsentiert. Gleichfalls  auch da sind diese Ordner die meistens benutzten
+Ordner. 
 
 | Υπο-φάκελος   | Περιεχόμενα                             |
 | :------------ |:--------------                          |
-| include       | Τα αρχεία κεφαλίδων.                    |
-| include/impl/ | Τα αρχεία που υλοποιούν τις κλάσεις.    |
-| src           | Τα πηγαία αρχεία που χρειάζονται για την μεταγλώττιση του προγράμματος.                                             |
-| build         | Τα εκτελέσιμα αρχεία του προγράμματος.  |
-| doc           | Τα αρχεία τεκμηρίωσης του προγράμματος. |
+| include       | Die Header-Dateien.                     |
+| include/impl/ | Die die Klassen realisierenden Dateien. |
+| src           | Die Quelldateien, die für die Programmkompilierung nötig sind.                                                     |
+| build         | Die ausführbaren Programmdateien.       |
+| doc           | Die ausführbaren Programmdateien.       |
 
 
-[^1]: CamelCase είναι η πρακτική της γραφής σύνθετων λέξεων ή φράσεων, έτσι ώστε κάθε λέξη ή σύντμηση να αρχίζει με ένα κεφαλαίο γράμμα. Αυτό επιτρέπει την μείωση του μεγέθους των φράσεων μιας και δεν χρησιμοποιούνται κενά ή κάποιοι άλλοι ειδικοί χαρακτήρες μεταξύ των λέξεων (π.χ. "_" ανάμεσα στις λέξεις ({{ "wiki:camelCase" |cite }},{{ "site:yolinux" |cite }})
+[^1]: CamelCase ist die Praxis der zusammengesetzten Wörter- oder Phrasen/Satzschriften, so dass jedes Wort  oder jede Abkürzung mit einem Großbuchstaben beginnt. Das ermöglicht die Verringerung der Größe der Sätze, da kein  Abstand oder irgendein anderer spezifischer Charakter zwischen den Wörtern gebraucht werden (z.B. "_" {{ "wiki:camelCase" |cite }},{{ "site:yolinux" |cite }})
 
 {% references %} {% endreferences %}
 

@@ -1,16 +1,16 @@
-# Γενικές πρακτικές προγραμματισμού
+# Generelle Programmpraktiken
 
-Κατά την διαδικασία εγγραφής του πηγαίου κώδικα, οι προγραμματιστές έχουν τρία
-βασικά εργαλεία για να δείξουν τις προθέσεις τους:
+Während  des Verfahrens  des Quellcodeverfassens  hat die Entwickler 3
+Grundwerkzeuge ihre Absichten zu melden:
 
-1. τα σχόλια (εξήγηση του πηγαίου κώδικα),
-1. σαφή ονόματα μεταβλητών, σταθερών, συναρτήσεων κ.λ.π. (οι λέξεις του ίδιου
-του προγράμματος),
-1. και το τυπογραφικό στυλ που αναπτύχθηκε στην προηγούμενη ενότητα.
+1. die Kommentare (Quellcodeerläuterung),
+1. die klare Variablen-,  Konstanten-, Funktionsnamen usw. (die
+Programmwörter an und für sich),
+1. und der Druckstil, der im letzten Kapitel dargestellt wurde.
 
-Κάθε ένα από αυτά τα στοιχεία βοηθά στην επικοινωνία μεταξύ του του
-προγραμματιστή που έγραψε τον κώδικα και του προγραμματιστή που διαβάζει τον
-πηγαίο κώδικα.
+Jedes von diesen Elementen hilft bei der Kommunikation zwischen dem
+Entwickler, der den Quellcode geschrieben hat, und dem Entwickler, der 
+den Quellcode liest. 
 
-Σε αυτή την ενότητα θα παρατεθούν γενικές πρακτικές προγραμματισμού οι οποίες
-βοηθούν στην καλύτερη κατανόηση του πηγαίου κώδικα.
+In diesem Kapitel werden generelle  Programmpraktiken vorgestellt werden,
+die beim besseren Codeverständnis helfen. 

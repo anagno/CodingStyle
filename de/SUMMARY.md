@@ -12,16 +12,16 @@
 	typographic_style/spaces.md)
     * [Klammern](
 	typographic_style/braces.md)
-* [Γενικές πρακτικές προγραμματισμού](
+* [Generelle Programmpraktiken](
 	general_programming_practices/README.md)
-    * [Ονοματολογία](
+    * [Regeln der Namensgebung ](
 	general_programming_practices/naming.md)
-	    * [Γενικοί κανόνες](
-		general_programming_practices/naming.md#γενικοί-κανόνες-31456)
-	    * [Κανόνες ονοματολογίας](
-		general_programming_practices/naming.md#κανόνες-ονοματολογίας)
-	    * [Υπο-φάκελοι](
-		general_programming_practices/naming.md#υπο-φάκελοι)
+	    * [Generalnamenskonventionen](
+		general_programming_practices/naming.md#generalnamenskonventionen-31456)
+	    * [Namenskonventionen](
+		general_programming_practices/naming.md#namenskonventionen)
+	    * [Unterordner](
+		general_programming_practices/naming.md#unterordner)
     * [Σχολιασμός και τεκμηρίωση](
 	general_programming_practices/documentation.md)
 	    * [Γενικά σχόλια](
