@@ -1,0 +1,573 @@
+
+<!DOCTYPE HTML>
+<html lang="el" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Γενικές πρακτικές προγραμματισμού · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-bibtex-cite/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="naming.html" />
+    
+    
+    <link rel="prev" href="../typographic_style/braces.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Αναζήτηση για ..." />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Εισαγωγή
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../typographic_style/">
+            
+                <a href="../typographic_style/">
+            
+                    
+                    Στοιχεία καλού προγραμματιστικού στυλ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../typographic_style/typographic_style.html">
+            
+                <a href="../typographic_style/typographic_style.html">
+            
+                    
+                    Τυπογραφικό στυλ - Εμφάνιση κώδικά
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../typographic_style/indentation.html">
+            
+                <a href="../typographic_style/indentation.html">
+            
+                    
+                    Εσοχές του κώδικα
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../typographic_style/alignment.html">
+            
+                <a href="../typographic_style/alignment.html">
+            
+                    
+                    Κατακόρυφη στοίχιση
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../typographic_style/spaces.html">
+            
+                <a href="../typographic_style/spaces.html">
+            
+                    
+                    Διαστήματα
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../typographic_style/braces.html">
+            
+                <a href="../typographic_style/braces.html">
+            
+                    
+                    Αγκύλες
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Γενικές πρακτικές προγραμματισμού
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="naming.html">
+            
+                <a href="naming.html">
+            
+                    
+                    Ονοματολογία
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="naming.html">
+            
+                <a href="naming.html#γενικοί-κανόνες-31456">
+            
+                    
+                    Γενικοί κανόνες
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="naming.html">
+            
+                <a href="naming.html#κανόνες-ονοματολογίας">
+            
+                    
+                    Κανόνες ονοματολογίας
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="naming.html">
+            
+                <a href="naming.html#υπο-φάκελοι">
+            
+                    
+                    Υπο-φάκελοι
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="documentation.html">
+            
+                <a href="documentation.html">
+            
+                    
+                    Σχολιασμός και τεκμηρίωση
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="documentation.html">
+            
+                <a href="documentation.html#γενικά-σχόλια-2345">
+            
+                    
+                    Γενικά σχόλια
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="documentation.html">
+            
+                <a href="documentation.html#σχόλια-οντοτήτων">
+            
+                    
+                    Σχόλια οντοτήτων
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="consistency.html">
+            
+                <a href="consistency.html">
+            
+                    
+                    Συνέπεια
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="magic_numbers.html">
+            
+                <a href="magic_numbers.html">
+            
+                    
+                    Μαγικοί αριθμοί
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="comparison.html">
+            
+                <a href="comparison.html">
+            
+                    
+                    Σύγκριση με βάση το αριστερό μέλος
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../conclusion.html">
+            
+                <a href="../conclusion.html">
+            
+                    
+                    Εφαρμογή και συμπεράσματα
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Δημοσιεύτηκε με το GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Γενικές πρακτικές προγραμματισμού</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x3B3;&#x3B5;&#x3BD;&#x3B9;&#x3BA;&#x3AD;&#x3C2;-&#x3C0;&#x3C1;&#x3B1;&#x3BA;&#x3C4;&#x3B9;&#x3BA;&#x3AD;&#x3C2;-&#x3C0;&#x3C1;&#x3BF;&#x3B3;&#x3C1;&#x3B1;&#x3BC;&#x3BC;&#x3B1;&#x3C4;&#x3B9;&#x3C3;&#x3BC;&#x3BF;&#x3CD;">&#x393;&#x3B5;&#x3BD;&#x3B9;&#x3BA;&#x3AD;&#x3C2; &#x3C0;&#x3C1;&#x3B1;&#x3BA;&#x3C4;&#x3B9;&#x3BA;&#x3AD;&#x3C2; &#x3C0;&#x3C1;&#x3BF;&#x3B3;&#x3C1;&#x3B1;&#x3BC;&#x3BC;&#x3B1;&#x3C4;&#x3B9;&#x3C3;&#x3BC;&#x3BF;&#x3CD;</h1>
+<p>&#x39A;&#x3B1;&#x3C4;&#x3AC; &#x3C4;&#x3B7;&#x3BD; &#x3B4;&#x3B9;&#x3B1;&#x3B4;&#x3B9;&#x3BA;&#x3B1;&#x3C3;&#x3AF;&#x3B1; &#x3B5;&#x3B3;&#x3B3;&#x3C1;&#x3B1;&#x3C6;&#x3AE;&#x3C2; &#x3C4;&#x3BF;&#x3C5; &#x3C0;&#x3B7;&#x3B3;&#x3B1;&#x3AF;&#x3BF;&#x3C5; &#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1;, &#x3BF;&#x3B9; &#x3C0;&#x3C1;&#x3BF;&#x3B3;&#x3C1;&#x3B1;&#x3BC;&#x3BC;&#x3B1;&#x3C4;&#x3B9;&#x3C3;&#x3C4;&#x3AD;&#x3C2; &#x3AD;&#x3C7;&#x3BF;&#x3C5;&#x3BD; &#x3C4;&#x3C1;&#x3AF;&#x3B1;
+&#x3B2;&#x3B1;&#x3C3;&#x3B9;&#x3BA;&#x3AC; &#x3B5;&#x3C1;&#x3B3;&#x3B1;&#x3BB;&#x3B5;&#x3AF;&#x3B1; &#x3B3;&#x3B9;&#x3B1; &#x3BD;&#x3B1; &#x3B4;&#x3B5;&#x3AF;&#x3BE;&#x3BF;&#x3C5;&#x3BD; &#x3C4;&#x3B9;&#x3C2; &#x3C0;&#x3C1;&#x3BF;&#x3B8;&#x3AD;&#x3C3;&#x3B5;&#x3B9;&#x3C2; &#x3C4;&#x3BF;&#x3C5;&#x3C2;:</p>
+<ol>
+<li>&#x3C4;&#x3B1; &#x3C3;&#x3C7;&#x3CC;&#x3BB;&#x3B9;&#x3B1; (&#x3B5;&#x3BE;&#x3AE;&#x3B3;&#x3B7;&#x3C3;&#x3B7; &#x3C4;&#x3BF;&#x3C5; &#x3C0;&#x3B7;&#x3B3;&#x3B1;&#x3AF;&#x3BF;&#x3C5; &#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1;),</li>
+<li>&#x3C3;&#x3B1;&#x3C6;&#x3AE; &#x3BF;&#x3BD;&#x3CC;&#x3BC;&#x3B1;&#x3C4;&#x3B1; &#x3BC;&#x3B5;&#x3C4;&#x3B1;&#x3B2;&#x3BB;&#x3B7;&#x3C4;&#x3CE;&#x3BD;, &#x3C3;&#x3C4;&#x3B1;&#x3B8;&#x3B5;&#x3C1;&#x3CE;&#x3BD;, &#x3C3;&#x3C5;&#x3BD;&#x3B1;&#x3C1;&#x3C4;&#x3AE;&#x3C3;&#x3B5;&#x3C9;&#x3BD; &#x3BA;.&#x3BB;.&#x3C0;. (&#x3BF;&#x3B9; &#x3BB;&#x3AD;&#x3BE;&#x3B5;&#x3B9;&#x3C2; &#x3C4;&#x3BF;&#x3C5; &#x3AF;&#x3B4;&#x3B9;&#x3BF;&#x3C5;
+&#x3C4;&#x3BF;&#x3C5; &#x3C0;&#x3C1;&#x3BF;&#x3B3;&#x3C1;&#x3AC;&#x3BC;&#x3BC;&#x3B1;&#x3C4;&#x3BF;&#x3C2;),</li>
+<li>&#x3BA;&#x3B1;&#x3B9; &#x3C4;&#x3BF; &#x3C4;&#x3C5;&#x3C0;&#x3BF;&#x3B3;&#x3C1;&#x3B1;&#x3C6;&#x3B9;&#x3BA;&#x3CC; &#x3C3;&#x3C4;&#x3C5;&#x3BB; &#x3C0;&#x3BF;&#x3C5; &#x3B1;&#x3BD;&#x3B1;&#x3C0;&#x3C4;&#x3CD;&#x3C7;&#x3B8;&#x3B7;&#x3BA;&#x3B5; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3C0;&#x3C1;&#x3BF;&#x3B7;&#x3B3;&#x3BF;&#x3CD;&#x3BC;&#x3B5;&#x3BD;&#x3B7; &#x3B5;&#x3BD;&#x3CC;&#x3C4;&#x3B7;&#x3C4;&#x3B1;.</li>
+</ol>
+<p>&#x39A;&#x3AC;&#x3B8;&#x3B5; &#x3AD;&#x3BD;&#x3B1; &#x3B1;&#x3C0;&#x3CC; &#x3B1;&#x3C5;&#x3C4;&#x3AC; &#x3C4;&#x3B1; &#x3C3;&#x3C4;&#x3BF;&#x3B9;&#x3C7;&#x3B5;&#x3AF;&#x3B1; &#x3B2;&#x3BF;&#x3B7;&#x3B8;&#x3AC; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3B5;&#x3C0;&#x3B9;&#x3BA;&#x3BF;&#x3B9;&#x3BD;&#x3C9;&#x3BD;&#x3AF;&#x3B1; &#x3BC;&#x3B5;&#x3C4;&#x3B1;&#x3BE;&#x3CD; &#x3C4;&#x3BF;&#x3C5; &#x3C4;&#x3BF;&#x3C5;
+&#x3C0;&#x3C1;&#x3BF;&#x3B3;&#x3C1;&#x3B1;&#x3BC;&#x3BC;&#x3B1;&#x3C4;&#x3B9;&#x3C3;&#x3C4;&#x3AE; &#x3C0;&#x3BF;&#x3C5; &#x3AD;&#x3B3;&#x3C1;&#x3B1;&#x3C8;&#x3B5; &#x3C4;&#x3BF;&#x3BD; &#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1; &#x3BA;&#x3B1;&#x3B9; &#x3C4;&#x3BF;&#x3C5; &#x3C0;&#x3C1;&#x3BF;&#x3B3;&#x3C1;&#x3B1;&#x3BC;&#x3BC;&#x3B1;&#x3C4;&#x3B9;&#x3C3;&#x3C4;&#x3AE; &#x3C0;&#x3BF;&#x3C5; &#x3B4;&#x3B9;&#x3B1;&#x3B2;&#x3AC;&#x3B6;&#x3B5;&#x3B9; &#x3C4;&#x3BF;&#x3BD;
+&#x3C0;&#x3B7;&#x3B3;&#x3B1;&#x3AF;&#x3BF; &#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1;.</p>
+<p>&#x3A3;&#x3B5; &#x3B1;&#x3C5;&#x3C4;&#x3AE; &#x3C4;&#x3B7;&#x3BD; &#x3B5;&#x3BD;&#x3CC;&#x3C4;&#x3B7;&#x3C4;&#x3B1; &#x3B8;&#x3B1; &#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3C4;&#x3B5;&#x3B8;&#x3BF;&#x3CD;&#x3BD; &#x3B3;&#x3B5;&#x3BD;&#x3B9;&#x3BA;&#x3AD;&#x3C2; &#x3C0;&#x3C1;&#x3B1;&#x3BA;&#x3C4;&#x3B9;&#x3BA;&#x3AD;&#x3C2; &#x3C0;&#x3C1;&#x3BF;&#x3B3;&#x3C1;&#x3B1;&#x3BC;&#x3BC;&#x3B1;&#x3C4;&#x3B9;&#x3C3;&#x3BC;&#x3BF;&#x3CD; &#x3BF;&#x3B9; &#x3BF;&#x3C0;&#x3BF;&#x3AF;&#x3B5;&#x3C2;
+&#x3B2;&#x3BF;&#x3B7;&#x3B8;&#x3BF;&#x3CD;&#x3BD; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3BA;&#x3B1;&#x3BB;&#x3CD;&#x3C4;&#x3B5;&#x3C1;&#x3B7; &#x3BA;&#x3B1;&#x3C4;&#x3B1;&#x3BD;&#x3CC;&#x3B7;&#x3C3;&#x3B7; &#x3C4;&#x3BF;&#x3C5; &#x3C0;&#x3B7;&#x3B3;&#x3B1;&#x3AF;&#x3BF;&#x3C5; &#x3BA;&#x3CE;&#x3B4;&#x3B9;&#x3BA;&#x3B1;.</p>
+<br><br><br><br><footer><hr><p></p><p style="text-align: right; color: #666"><span><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span></p></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../typographic_style/braces.html" class="navigation navigation-prev " aria-label="Previous page: Αγκύλες">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="naming.html" class="navigation navigation-next " aria-label="Next page: Ονοματολογία">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Γενικές πρακτικές προγραμματισμού","level":"1.3","depth":1,"next":{"title":"Ονοματολογία","level":"1.3.1","depth":2,"path":"general_programming_practices/naming.md","ref":"general_programming_practices/naming.md","articles":[{"title":"Γενικοί κανόνες","level":"1.3.1.1","depth":3,"anchor":"#γενικοί-κανόνες-31456","path":"general_programming_practices/naming.md","ref":"general_programming_practices/naming.md#γενικοί-κανόνες-31456","articles":[]},{"title":"Κανόνες ονοματολογίας","level":"1.3.1.2","depth":3,"anchor":"#κανόνες-ονοματολογίας","path":"general_programming_practices/naming.md","ref":"general_programming_practices/naming.md#κανόνες-ονοματολογίας","articles":[]},{"title":"Υπο-φάκελοι","level":"1.3.1.3","depth":3,"anchor":"#υπο-φάκελοι","path":"general_programming_practices/naming.md","ref":"general_programming_practices/naming.md#υπο-φάκελοι","articles":[]}]},"previous":{"title":"Αγκύλες","level":"1.2.5","depth":2,"path":"typographic_style/braces.md","ref":"typographic_style/braces.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors","richquotes","github","language-picker","codeblock-label","sectionx","bibtex-cite","image-captions","include-codeblock","ace","insert-logo","footer-sdluniandes"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/anagno/CodingStyle"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"highlight":{},"bibtex-indexed-cite":{"path":"./literature.bib"},"bibtex-cite":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"footer-sdluniandes":{"license":"Creative Commons Attribution-ShareAlike 4.0 International License","licenseImage":"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png","licenseLink":"http://creativecommons.org/licenses/by-nc-nd/4.0/","text":""},"insert-logo":{"style":"background: none;","url":"../../images/coding_style.png"},"image-captions":{"caption":"_CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"bibCount":0,"variables":{"django_version":"2.0.6","_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","list_caption":"Figure: Η ταξινόμηση του προγραμματιστικού στυλ {{ \"Oman1991287\" |cite }}.\n","alt":"Η ταξινόμηση του προγραμματιστικού στυλ {{ \"Oman1991287\" |cite }}.\n","nro":1,"url":"../images/style_taxonomy.png","index":1,"caption_template":"_CAPTION_","label":"Η ταξινόμηση του προγραμματιστικού στυλ {{ \"Oman1991287\" |cite }}.\n","attributes":{},"skip":false,"key":"1.1.1"},{"backlink":"index.html#fig1.1.2","level":"1.1","list_caption":"Figure: Η σχέση μεταξύ προγραμματιστικού στυλ και ποιότητας λογισμικού \n{{ \"WangZH08\" |cite }}.","alt":"Η σχέση μεταξύ προγραμματιστικού στυλ και ποιότητας λογισμικού \n{{ \"WangZH08\" |cite }}.","nro":2,"url":"../images/coding_standard_to_software_quality.png","index":2,"caption_template":"_CAPTION_","label":"Η σχέση μεταξύ προγραμματιστικού στυλ και ποιότητας λογισμικού \n{{ \"WangZH08\" |cite }}.","attributes":{},"skip":false,"key":"1.1.2"},{"backlink":"index.html#fig1.1.3","level":"1.1","list_caption":"Figure: Τα πεδία που επηρεάζονται από την επιλογή ενός στυλ κώδικα\n{{ \"ala2004supporting\" |cite }}.","alt":"Τα πεδία που επηρεάζονται από την επιλογή ενός στυλ κώδικα\n{{ \"ala2004supporting\" |cite }}.","nro":3,"url":"../images/style_quality.png","index":3,"caption_template":"_CAPTION_","label":"Τα πεδία που επηρεάζονται από την επιλογή ενός στυλ κώδικα\n{{ \"ala2004supporting\" |cite }}.","attributes":{},"skip":false,"key":"1.1.3"}]},"language":"el","bib":[{"citationKey":"CORBOGP07","entryType":"INPROCEEDINGS","entryTags":{"AUTHOR":"Corbo, Filippo and Grosso, Concettina Del and Penta, Massimiliano\n\tDi","TITLE":"Smart Formatter: Learning Coding Style from Existing Source Code.","BOOKTITLE":"ICSM","YEAR":"2007","PAGES":"525-526","PUBLISHER":"IEEE","URL":"http://dblp.uni-trier.de/db/conf/icsm/icsm2007.html#CorboGP07"}},{"citationKey":"GNU_CODING","entryType":"MANUAL","entryTags":{"TITLE":"GNU Coding Standards","AUTHOR":"Richard Stallman et all.","MONTH":"December","YEAR":"2013","URL":"http://www.gnu.org/prep/standards/standards.pdf"}},{"citationKey":"ALA2004SUPPORTING","entryType":"ARTICLE","entryTags":{"AUTHOR":"Ala-Mutka, Kirsti and Uimonen, Toni and Jarvinen, Hannu-Matti","TITLE":"Supporting students in C++ programming courses with automatic program\n\tstyle assessment","JOURNAL":"Journal of Information Technology Education","YEAR":"2004","VOLUME":"3","PAGES":"245--262","PUBLISHER":"Citeseer"}},{"citationKey":"AYERBE","entryType":"INPROCEEDINGS","entryTags":{"AUTHOR":"Ayerbe, A. and Vazquez, I.","TITLE":"Software products quality improvement with a programming style guide\n\tand a measurement process","BOOKTITLE":"Computer Software and Applications Conference, 1998. COMPSAC '98.\n\tProceedings. The Twenty-Second Annual International","YEAR":"1998","PAGES":"172-178","DOI":"10.1109/CMPSAC.1998.716653","FILE":":/home/anagno/Documents/unipi/1ο Εξάμηνο/Εισαγωγή στην Επιστήμη των Υπολογιστών/Θέμα Εξαμήνου/references/Ayerbe.pdf:PDF","ISSN":"0730-3157"}},{"citationKey":"SITE:BOOST_GUIDELINES","entryType":"MISC","entryTags":{"AUTHOR":"Boost","TITLE":"Boost Library Requirements and Guidelines","HOWPUBLISHED":"\\url{http://www.boost.org/development/requirements.html}","NOTE":"[Πρόσβαση στις 21 Δεκμβρίου 2013]","URL":"http://www.boost.org/development/requirements.html"}},{"citationKey":"SITE:CODDING_MATTERS","entryType":"MISC","entryTags":{"AUTHOR":"Thomas C. Bressoud","TITLE":"C++ Programming Style Guide","HOWPUBLISHED":"\\url{http://coding.smashingmagazine.com/2012/10/25/why-coding-style-matters/}","NOTE":"[Πρόσβαση στις 18 Δεκμβρίου 2013]","URL":"http://personal.denison.edu/~bressoud/cs173-s07/styleguide.pdf"}},{"citationKey":"AND95SOFTWAREMAINTENANCE","entryType":"INPROCEEDINGS","entryTags":{"AUTHOR":"Gerardo Canfora And and Gerardo Canfora and Aniello Cimitile","TITLE":"Software Maintenance","BOOKTITLE":"In Proc. 7th Int. Conf. Software Engineering and Knowledge Engineering","YEAR":"1995","PAGES":"478--486"}},{"citationKey":"JSF-AV-RULES","entryType":"MANUAL","entryTags":{"TITLE":"C++ coding standards for the system development and demonstration\n\tprogram","AUTHOR":"Lockheed Martin Corporation","ORGANIZATION":"Lockheed Martin Corporation","EDITION":"2RDU00001 Rev C","MONTH":"December","YEAR":"2005"}},{"citationKey":"COX","entryType":"INPROCEEDINGS","entryTags":{"AUTHOR":"Cox, A. and Fisher, M.","TITLE":"Programming Style: Influences, Factors, and Elements","BOOKTITLE":"Advances in Computer-Human Interactions, 2009. ACHI '09. Second International\n\tConferences on","YEAR":"2009","PAGES":"82-89","DOI":"10.1109/ACHI.2009.48"}},{"citationKey":"DEITEL2011C","entryType":"BOOK","entryTags":{"TITLE":"C++: How to Program","PUBLISHER":"Prentice Hall PTR","YEAR":"2011","AUTHOR":"Deitel, P.J. and Deitel, H.M.","SERIES":"Deitel series","ISBN":"9780132662369","URL":"http://books.google.gr/books?id=Y8Q6XwAACAAJ"}},{"citationKey":"SITE:GNU_CONVENTIONS","entryType":"MISC","entryTags":{"AUTHOR":"GCC","TITLE":"GCC Coding Conventions","HOWPUBLISHED":"\\url{http://gcc.gnu.org/codingconventions.html}","NOTE":"[Πρόσβαση στις 21 Δεκμβρίου 2013]","URL":"http://gcc.gnu.org/codingconventions.html"}},{"citationKey":"ROBERT2003FACTS","entryType":"BOOK","entryTags":{"TITLE":"Facts and Fallacies of Software Engineering","PUBLISHER":"Addison-Wesley","YEAR":"2003","AUTHOR":"Robert L. Glass","SERIES":"Agile Software Development","ISBN":"9780321117427","URL":"http://books.google.gr/books?id=3Ntz-UJzZN0C"}},{"citationKey":"SITE:GNU_STYLE","entryType":"MISC","entryTags":{"AUTHOR":"GNU","TITLE":"GNU Coding Standards","HOWPUBLISHED":"\\url{http://www.gnu.org/prep/standards/standards.html}","NOTE":"[Πρόσβαση στις 18 Δεκμβρίου 2013]","TIMESTAMP":"2013.12.18","URL":"http://www.gnu.org/prep/standards/standards.html"}},{"citationKey":"SITE:GOOGLE_CPP","entryType":"MISC","entryTags":{"AUTHOR":"Google","TITLE":"Google Style Guide","HOWPUBLISHED":"\\url{http://code.google.com/p/google-styleguide/}","NOTE":"[Πρόσβαση στις 18 Δεκμβρίου 2013]","URL":"http://code.google.com/p/google-styleguide/"}},{"citationKey":"SITE:GOOGLE_STYLE","entryType":"MISC","entryTags":{"AUTHOR":"Google","TITLE":"Google C++ Style Guide","HOWPUBLISHED":"\\url{http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml}","NOTE":"[Πρόσβαση στις 18 Δεκμβρίου 2013]","URL":"http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml"}},{"citationKey":"PROGRAMMING2003HIGH","entryType":"MISC","entryTags":{"AUTHOR":"Programming Research Group and others","TITLE":"High-Integrity C++ Coding Standard Manual: Version 3.3","HOWPUBLISHED":"\\url{http://www.programmingresearch.com/content/misc/hicpp-manual-version-3-3.pdf}","YEAR":"2013","NOTE":"[Πρόσβαση στις 21 Δεκμβρίου 2013]","URL":"http://www.programmingresearch.com/content/misc/hicpp-manual-version-3-3.pdf"}},{"citationKey":"PROGRAMMING2013HIGH","entryType":"MISC","entryTags":{"AUTHOR":"Programming Research Group and others","TITLE":"High-Integrity C++ Coding Standard Manual: Version 4.0","HOWPUBLISHED":"\\url{http://www.codingstandard.com/section/index/}","YEAR":"2013","NOTE":"[Πρόσβαση στις 21 Δεκμβρίου 2013]","URL":"http://www.codingstandard.com/section/index/"}},{"citationKey":"HENRICSON1995INDUSTRIAL","entryType":"BOOK","entryTags":{"TITLE":"Industrial Strength C++; Rules and Recommendations","PUBLISHER":"Prentice Hall PTR","YEAR":"1995","AUTHOR":"Henricson, Mats and Nyquist, Erik"}},{"citationKey":"SITE:TALIGENT","entryType":"MISC","entryTags":{"AUTHOR":"Taligent Inc","TITLE":"Taligent Documentation","HOWPUBLISHED":"\\url{http://root.cern.ch/TaligentDocs/TaligentOnline/DocumentRoot/1.0/Docs/books/WM/WM_3.html}","NOTE":"[Πρόσβαση στις 28 Δεκμβρίου 2013]","URL":"http://root.cern.ch/TaligentDocs/TaligentOnline/DocumentRoot/1.0/Docs/books/WM/WM_3.html"}},{"citationKey":"KERNIGHAN1988C","entryType":"BOOK","entryTags":{"TITLE":"The C Programming Language","PUBLISHER":"Prentice Hall","YEAR":"1988","AUTHOR":"Kernighan, B.W. and Ritchie, D.M.","SERIES":"Prentice-Hall software series","ISBN":"9780131103627","URL":"http://books.google.gr/books?id=161QAAAAMAAJ"}},{"citationKey":"KERNIGHAN","entryType":"BOOK","entryTags":{"TITLE":"The Elements of Programming Style","PUBLISHER":"McGraw-Hill, Inc.","YEAR":"1982","AUTHOR":"Kernighan, Brian W. and Plauger, P. J.","ADDRESS":"New York, NY, USA","EDITION":"2nd","ISBN":"0070342075"}},{"citationKey":"KONDOH200682","entryType":"ARTICLE","entryTags":{"PAGES":"82 - 116","ISSN":"0167-6423","NUMBER":"1","AUTHOR":"Hidetaka Kondoh and Kokichi Futatsugi","URL":"http://www.sciencedirect.com/science/article/pii/S0167642305000924","JOURNAL":"Science of Computer Programming ","TITLE":"To use or not to use the goto statement: Programming styles viewed\n\tfrom Hoare Logic ","VOLUME":"60","YEAR":"2006","DOI":"http://dx.doi.org/10.1016/j.scico.2005.05.003"}},{"citationKey":"QUANTUM_CODING","entryType":"MISC","entryTags":{"AUTHOR":"Quantum Leaps","TITLE":"Application Note C/C++ Coding Standard","HOWPUBLISHED":"\\url{http://www.state-machine.com/doc/AN_QL_Coding_Standard.pdf}","YEAR":"2008","URL":"http://www.state-machine.com/doc/AN_QL_Coding_Standard.pdf"}},{"citationKey":"SOFTWARE_REUSE","entryType":"INCOLLECTION","entryTags":{"PAGES":"62-77","AUTHOR":"Lee, Kwanwoo and Kang, KyoC. and Lee, Jaejoon","EDITOR":"Gacek, Cristina","BOOKTITLE":"Software Reuse: Methods, Techniques, and Tools","URL":"http://dx.doi.org/10.1007/3-540-46020-9_5","ISBN":"978-3-540-43483-2","SERIES":"Lecture Notes in Computer Science","TITLE":"Concepts and Guidelines of Feature Modeling for Product Line Software\n\tEngineering","VOLUME":"2319","PUBLISHER":"Springer Berlin Heidelberg","YEAR":"2002","DOI":"10.1007/3-540-46020-9_5"}},{"citationKey":"SITE:FX_ALPHA","entryType":"MISC","entryTags":{"AUTHOR":"David H. Leserman","TITLE":"FX-ALPHA C and C++ Coding Conventions","HOWPUBLISHED":"\\url{http://fxa.noaa.gov/manuals/codingGuidelines.html}","NOTE":"[Πρόσβαση στις 24 Δεκμβρίου 2013]","URL":"http://fxa.noaa.gov/manuals/codingGuidelines.html"}},{"citationKey":"LI:2005:ETC:1095714.1095770","entryType":"INPROCEEDINGS","entryTags":{"PAGES":"239--244","ACMID":"1095770","KEYWORDS":"coding standards, teaching programming","AUTHOR":"Li, Xiaosong and Prasad, Christine","BOOKTITLE":"Proceedings of the 6th Conference on Information Technology Education","URL":"http://doi.acm.org/10.1145/1095714.1095770","ADDRESS":"New York, NY, USA","LOCATION":"Newark, NJ, USA","ISBN":"1-59593-252-6","SERIES":"SIGITE '05","TITLE":"Effectively Teaching Coding Standards in Programming","PUBLISHER":"ACM","YEAR":"2005","DOI":"10.1145/1095714.1095770","NUMPAGES":"6"}},{"citationKey":"YOUHAI","entryType":"MASTERSTHESIS","entryTags":{"AUTHOR":"Lim, You Hai","TITLE":"Tool Support for Learning Programming Style","SCHOOL":"The University of Western Australia","YEAR":"2009"}},{"citationKey":"SITE:STYLE_GUIDES","entryType":"MISC","entryTags":{"AUTHOR":"Christopher M. Lott","TITLE":"C and C++ Style Guides","HOWPUBLISHED":"\\url{http://www.maultech.com/chrislott/resources/cstyle/}","NOTE":"[Πρόσβαση στις 18 Δεκμβρίου 2013]","URL":"http://www.maultech.com/chrislott/resources/cstyle/"}},{"citationKey":"MCCONNELL","entryType":"BOOK","entryTags":{"TITLE":"Code Complete, Second Edition","PUBLISHER":"Microsoft Press","YEAR":"2004","AUTHOR":"McConnell, Steve","ADDRESS":"Redmond, WA, USA","ISBN":"0735619670, 9780735619678"}},{"citationKey":"MOHAN","entryType":"INPROCEEDINGS","entryTags":{"AUTHOR":"Mohan, A. and Gold, N.","TITLE":"Programming style changes in evolving source code","BOOKTITLE":"Program Comprehension, 2004. Proceedings. 12th IEEE International\n\tWorkshop on","YEAR":"2004","PAGES":"236-240","DOI":"10.1109/WPC.2004.1311066","ISSN":"1092-8138"}},{"citationKey":"OMAN1991287","entryType":"ARTICLE","entryTags":{"PAGES":"287 - 301","ISSN":"0164-1212","NUMBER":"3","AUTHOR":"Paul W. Oman and Curtis R. Cook","URL":"http://www.sciencedirect.com/science/article/pii/0164121291900447","JOURNAL":"Journal of Systems and Software ","TITLE":"A programming style taxonomy ","VOLUME":"15","YEAR":"1991","DOI":"http://dx.doi.org/10.1016/0164-1212(91)90044-7"}},{"citationKey":"OMAN","entryType":"ARTICLE","entryTags":{"MONTH":"December","PAGES":"69--78","ISSN":"0362-1340","NUMBER":"12","AUTHOR":"Oman, P. W. and Cook, C. R.","URL":"http://doi.acm.org/10.1145/57669.57675","ADDRESS":"New York, NY, USA","JOURNAL":"SIGPLAN Not.","TITLE":"A Paradigm for Programming Style Research","VOLUME":"23","PUBLISHER":"ACM","YEAR":"1988","DOI":"10.1145/57669.57675","NUMPAGES":"10"}},{"citationKey":"PAOLI2000C","entryType":"TECHREPORT","entryTags":{"AUTHOR":"Paoli, S and Binko, P and Burckhart, D and Fisher, SM and Hrivnacova,\n\tI and Lamanna, M and Stavrianakou, M and Wellisch, HP","TITLE":"C++ coding standard specification","INSTITUTION":"Technical Report CERN-UCO/1999/207, CERN","YEAR":"2000"}},{"citationKey":"SITE:PCL","entryType":"MISC","entryTags":{"AUTHOR":"PCL","TITLE":"PCL C++ Programming Style Guide","HOWPUBLISHED":"\\url{http://pointclouds.org/documentation/advanced/pcl_style_guide.php\\#naming}","NOTE":"[Πρόσβαση στις 25 Ιανουαρίου 2014]","URL":"http://pointclouds.org/documentation/advanced/pcl_style_guide.php#naming"}},{"citationKey":"PRESSMAN","entryType":"BOOK","entryTags":{"MONTH":"November","KEYWORDS":"changemanagement, software-configuration-management, softwareengineering","AUTHOR":"Pressman, Roger S.","URL":"http://www.amazon.com/exec/obidos/redirect?tag=citeulike07-20\\&path=ASIN/0072496681","ISBN":"0072496681","TITLE":"Software Engineering: A Practitioner's Approach w/ E-Source on CD-ROM","PUBLISHER":"{McGraw-Hill Science/Engineering/Math}","YEAR":"2001","HOWPUBLISHED":"Hardcover"}},{"citationKey":"SITE:RAZVANPETRU","entryType":"MISC","entryTags":{"AUTHOR":"razvanpetru","TITLE":"The “Large-Scale C++ Software Design” rules in practice","HOWPUBLISHED":"\\url{http://blog.codeimproved.net/2009/03/the-large-scale-c-software-design-rules-in-practice/}","NOTE":"[Πρόσβαση στις 21 Δεκμβρίου 2013]","URL":"http://blog.codeimproved.net/2009/03/the-large-scale-c-software-design-rules-in-practice/"}},{"citationKey":"SITE:GEOSOFT","entryType":"MISC","entryTags":{"AUTHOR":"Geotechnical Software Services","TITLE":"C++ Programming Style Guidelines","HOWPUBLISHED":"\\url{http://geosoft.no/development/cppstyle.html}","NOTE":"[Πρόσβαση στις 29 Δεκμβρίου 2013]","URL":"http://geosoft.no/development/cppstyle.html"}},{"citationKey":"SITE:BJARNE_CODING","entryType":"MISC","entryTags":{"AUTHOR":"Bjarne Stroustrup","TITLE":"Bjarne Stroustrup's C++ Style and Technique FAQ","HOWPUBLISHED":"\\url{http://www.stroustrup.com/bs_faq2.html}","NOTE":"[Πρόσβαση στις 21 Δεκμβρίου 2013]","URL":"http://www.stroustrup.com/bs_faq2.html"}},{"citationKey":"SUTTER2004C","entryType":"BOOK","entryTags":{"TITLE":"C++ coding standards: 101 rules, guidelines, and best practices","PUBLISHER":"Pearson Education","YEAR":"2004","AUTHOR":"Sutter, Herb and Alexandrescu, Andrei"}},{"citationKey":"P33-THOMAS","entryType":"ARTICLE","entryTags":{"MONTH":"February","PAGES":"33--37","ISSN":"0097-8418","NUMBER":"1","AUTHOR":"Thomas, Lynda and Ratcliffe, Mark and Woodbury, John and Jarman,\n\tEmma","URL":"http://doi.acm.org/10.1145/563517.563352","ADDRESS":"New York, NY, USA","JOURNAL":"SIGCSE Bull.","TITLE":"Learning Styles and Performance in the Introductory Programming Sequence","VOLUME":"34","PUBLISHER":"ACM","YEAR":"2002","DOI":"10.1145/563517.563352","NUMPAGES":"5"}},{"citationKey":"P33-THOMAS2","entryType":"INPROCEEDINGS","entryTags":{"PAGES":"33--37","KEYWORDS":"Diagnostic testing, Introductory programming, Learning styles, Software\n\tEngineering Education, Student profiling","AUTHOR":"Thomas, Lynda and Ratcliffe, Mark and Woodbury, John and Jarman,\n\tEmma","BOOKTITLE":"Proceedings of the 33rd SIGCSE Technical Symposium on Computer Science\n\tEducation","URL":"http://doi.acm.org/10.1145/563340.563352","ADDRESS":"New York, NY, USA","LOCATION":"Cincinnati, Kentucky","ISBN":"1-58113-473-8","SERIES":"SIGCSE '02","TITLE":"Learning Styles and Performance in the Introductory Programming Sequence","PUBLISHER":"ACM","YEAR":"2002","DOI":"10.1145/563340.563352","NUMPAGES":"5"}},{"citationKey":"SITE:LINUX_STYLE","entryType":"MISC","entryTags":{"AUTHOR":"Linus Torvalds","TITLE":"Linux kernel coding style","HOWPUBLISHED":"\\url{https://www.kernel.org/doc/Documentation/CodingStyle}","NOTE":"[Πρόσβαση στις 18 Δεκμβρίου 2013]","URL":"https://www.kernel.org/doc/Documentation/CodingStyle"}},{"citationKey":"WANGZH08","entryType":"ARTICLE","entryTags":{"AUTHOR":"Wang, Yanqing and Zheng, Bo and Huang, Hujie","TITLE":"Complying with Coding Standards or Retaining Programming Style: A\n\tQuality Outlook at Source Code Level.","JOURNAL":"JSEA","YEAR":"2008","VOLUME":"1","PAGES":"88-91","NUMBER":"1","URL":"http://dblp.uni-trier.de/db/journals/jsea/jsea1.html#WangZH08"}},{"citationKey":"WIKIBOOK:ADA","entryType":"MISC","entryTags":{"AUTHOR":"Wikibooks","TITLE":"Ada Quality and Style Guide","HOWPUBLISHED":"\\url{http://en.wikibooks.org/wiki/Ada_Style_Guide}","NOTE":"[Πρόσβαση στις 21 Δεκμβρίου 2013]","URL":"http://en.wikibooks.org/wiki/Ada_Style_Guide"}},{"citationKey":"WIKIBOOK:CPP_PROGRAMMING","entryType":"MISC","entryTags":{"AUTHOR":"Wikibooks","TITLE":"C++ Programming","HOWPUBLISHED":"\\url{http://en.wikibooks.org/wiki/C%2B%2B_Programming/Programming_Languages/C%2B%2B/Code/Style_Conventions}","NOTE":"[Πρόσβαση στις 22 Δεκμβρίου 2013]","URL":"http://en.wikibooks.org/wiki/C%2B%2B_Programming/Programming_Languages/C%2B%2B/Code/Style_Conventions"}},{"citationKey":"WIKIBOOK:CPP_STYLE","entryType":"MISC","entryTags":{"AUTHOR":"Wikibooks","TITLE":"Computer Programming/Coding Style","HOWPUBLISHED":"\\url{http://en.wikibooks.org/wiki/Computer_Programming/Coding_Style}","NOTE":"[Πρόσβαση στις 22 Δεκμβρίου 2013]","URL":"http://en.wikibooks.org/wiki/Computer_Programming/Coding_Style"}},{"citationKey":"WIKI:CAMELCASE","entryType":"MISC","entryTags":{"AUTHOR":"Wikipedia","TITLE":"CamelCase --- {W}ikipedia{,} The Free Encyclopedia","HOWPUBLISHED":"\\url{http://en.wikipedia.org/wiki/CamelCase}","NOTE":"[Πρόσβαση στις 30 Δεκμβρίου 2013]","URL":"http://en.wikipedia.org/wiki/CamelCase"}},{"citationKey":"WIKI:CODING_CONVETIONS","entryType":"MISC","entryTags":{"AUTHOR":"Wikipedia","TITLE":"Coding conventions --- {W}ikipedia{,} The Free Encyclopedia","HOWPUBLISHED":"\\url{http://en.wikipedia.org/wiki/Coding_conventions}","NOTE":"[Πρόσβαση στις 21 Δεκμβρίου 2013]","URL":"http://en.wikipedia.org/wiki/Coding_conventions"}},{"citationKey":"WIKI:CODING_PRACTICES","entryType":"MISC","entryTags":{"AUTHOR":"Wikipedia","TITLE":"Best coding practices --- {W}ikipedia{,} The Free Encyclopedia","HOWPUBLISHED":"\\url{http://en.wikipedia.org/wiki/Best_coding_practices}","NOTE":"[Πρόσβαση στις 18 Δεκμβρίου 2013]","URL":"http://en.wikipedia.org/wiki/Best_coding_practices"}},{"citationKey":"WIKI:PROGRAMMING_STYLE","entryType":"MISC","entryTags":{"AUTHOR":"Wikipedia","TITLE":"Programming style --- {W}ikipedia{,} The Free Encyclopedia","HOWPUBLISHED":"\\url{http://en.wikipedia.org/wiki/Programming_style}","NOTE":"[Πρόσβαση στις 18 Δεκμβρίου 2013]","URL":"http://en.wikipedia.org/wiki/Programming_style"}},{"citationKey":"WIKI:SOFTWARE_QUALITY","entryType":"MISC","entryTags":{"AUTHOR":"Wikipedia","TITLE":"Software quality --- {W}ikipedia{,} The Free Encyclopedia","HOWPUBLISHED":"\\url{http://en.wikipedia.org/wiki/Software_quality_model\\#Measurement}","NOTE":"[Πρόσβαση στις 21 Δεκμβρίου 2013]","URL":"http://en.wikipedia.org/wiki/Software_quality_model#Measurement"}},{"citationKey":"SITE:YOLINUX","entryType":"MISC","entryTags":{"AUTHOR":"YoLinux.com","TITLE":"C++ Coding Practices, Style, Standards and document generation (dOxygen)","HOWPUBLISHED":"\\url{http://www.yolinux.com/TUTORIALS/LinuxTutorialC++CodingStyle.html}","NOTE":"[Πρόσβαση στις 21 Δεκμβρίου 2013]","URL":"http://www.yolinux.com/TUTORIALS/LinuxTutorialC++CodingStyle.html"}}],"gitbook":"*"},"file":{"path":"general_programming_practices/README.md","mtime":"2018-09-05T22:19:21.315Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-05T22:19:36.286Z"},"basePath":"..","book":{"language":"el"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
