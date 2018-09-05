@@ -22,12 +22,12 @@
 		general_programming_practices/naming.md#namenskonventionen)
 	    * [Unterordner](
 		general_programming_practices/naming.md#unterordner)
-    * [Σχολιασμός και τεκμηρίωση](
+    * [Kommentar und Documentation](
 	general_programming_practices/documentation.md)
-	    * [Γενικά σχόλια](
-		general_programming_practices/documentation.md#γενικά-σχόλια-2345)
-	    * [Σχόλια οντοτήτων](
-		general_programming_practices/documentation.md#σχόλια-οντοτήτων)
+	    * [Generalkommentare](
+		general_programming_practices/documentation.md#generalkommentare-2345)
+	    * [Entitätskommentare](
+		general_programming_practices/documentation.md#entitätskommentare)
     * [Συνέπεια](
 	general_programming_practices/consistency.md)
     * [Μαγικοί αριθμοί](

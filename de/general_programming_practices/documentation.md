@@ -1,94 +1,91 @@
-# Σχολιασμός και τεκμηρίωση (αγγλ. Commenting and Documentantion) ({{ "wikibook:cpp_style" |cite }})
+# Kommentar und Documentation (Engl. Commenting and Documentantion) ({{ "wikibook:cpp_style" |cite }})
 
-Η τεκμηρίωση και ο σχολιασμός του πηγαίου κώδικα είναι μία από τις πιο
-σημαντικές διαδικασίες κατά την παραγωγή του. Αν και δεν συνδέεται άμεσα με
-την λειτουργικότητα του κώδικα, συνδέεται έμμεσα με την δυνατότητα επέκτασης
-του, μιας και παρέχει με διορατικό τρόπο τις προθέσεις του αρχικού
-προγραμματιστή. 
+Dokumentation und Kommentar des Quellcodes ist bei seiner Produktion einer
+der wichtigsten Prozesse. Obwohl sie mit der Codezweckmäßigkeit
+nicht direkt verbunden ist, ist sie indirekt mit seiner
+Erweiterungsmöglichkeit verbunden, da sie weitsichtigerweise die Absichten
+des ursprünglichen Entwicklers deutlich macht.
 
-Κατάλληλα θέματα για την τεκμηρίωση συχνά περιλαμβάνουν:
-* Γενική περιγραφή του προγράμματος. Πρέπει να περιλαμβάνει: 
-  * Μία επισκόπηση για το τον σκοπό που δημιουργήθηκε το πρόγραμμα.
-  * Ένα απλό παράδειγμα χρήσης του προγράμματος.
-  * Οδηγίες εκμάθησης για την βασική χρήση του προγράμματος.
-* Τεκμηρίωση του κώδικα. Η τεκμηρίωση του κώδικα περιλαμβάνει:
-  * Περιγραφή των κλάσεων και των συναρτήσεων του προγράμματος.
-  * Την σχέση μεταξύ των κλάσεων και των συναρτήσεων.
-  * Για κάθε συνάρτηση, ανάλογα με την περίπτωση, μία περιγραφή, τις
-απαιτήσεις για την σωστή λειτουργία της, τα αποτελέσματα της, την τιμή που
-επιστρέφει καθώς και τυχόν σφάλματα που μπορεί να συμβούν.
-  * Εντοπισμό σφαλμάτων και στρατηγικές για την αποφυγή τους.
-  * Πως μεταγλωττίζεται και συνδέεται το πρόγραμμα.
-  * Η εκδοσή του προγράμματος και τυχόν αλλαγές που έχουν συμβεί.
-  * Αιτιολόγηση για τη λήψη αποφάσεων σχεδιασμού.
-  * Τυχόν ευχαριστίες.
+Für die Dokumentation geeignete Themen umfassen oft:
+* Allgemeine Programmschilderung. Sie muss umfassen:
+  * Einen Überblick über den Zweck, zu dem-wozu das Programm entwickelt wurde.
+  * Ein einfaches Programmgebrauchsbeispiel.
+  * Erlernungsanweisungen für den Grundprogrammgebrauch.
+* Dokumentation des Quellcodes. Die Dokumentation des Codes umfasst:
+  * Klassen- und Funktionsschilderung des Programms.
+  * Den Zusammenhang zwischen den Klassen und Funktionen.
+  * Für jede Funktion, je nach dem Fall, eine Beschreibung, die
+Voraussetzungen  für ihre richtige Funktion, ihre Ergebnisse, den
+Rückgabewert sowie mögliche Fehler, die vorkommen können.
+  * Fehlerlokalisierung und Strategien für Ihre Vermeidung.
+  * Wie kann das Programm kompiliert und gelinkt werden.
+  * Die Programmversion und mögliche Änderungen, die gemacht worden sind.
+  * Begründung für die Planungsbeschlussfassung.
+  * Irgendein Dankeschön.
 
 Με τα σχόλια και την τεκμηρίωση διασφαλίζεται ότι ο κώδικας έχει περιγραφτεί με επαρκείς λεπτομέρειες έτσι ώστε όταν κάποιος κοιτάζει τον πηγαίο κώδικα θα μπορεί εύκολα να καταλάβει το σχεδιασμό και το σκοπό του κώδικα
 ({{ "wikibook:cpp_style" |cite }}).
 
-## Γενικά σχόλια ({{ "site:linux_style" |cite }},{{ "sutter2004c" |cite }},{{ "wiki:coding_practices" |cite }},{{ "site:google_style" |cite }})
+## Generalkommentare ({{ "site:linux_style" |cite }},{{ "sutter2004c" |cite }},{{ "wiki:coding_practices" |cite }},{{ "site:google_style" |cite }})
 
-* Σε γενικές γραμμές, χρειάζεται τα σχόλια να λένε **ΤΙ** κάνουν στον κώδικα
-και όχι **ΠΩΣ** το κάνουν.
-* Τα καλύτερα σχόλια στον πηγαίο κώδικα είναι ο ίδιος ο πηγαίος κώδικας. 
-Γι` αυτό το λόγο ο κώδικας θα πρέπει να "αυτο-τεκμηριώνεται". Είναι
-προτιμητέο να εξηγείτε κάτι μέσα από τον ίδιο τον πηγαίο κώδικα (π.χ. με 
-την χρήση κάποιου πολύπλοκου ονόματος μεταβλητής) παρά να χρησιμοποιούνται
-αργότερα σχόλια τα οποία εξηγούν τί κάνει ο συγκεκριμένος κώδικας.
-* Σχόλια πρέπει να τοποθετούνται:
-  1. σε πολύπλοκα, 
-  1. μη προφανή, 
-  1. ενδιαφέροντα ή 
-  1. σημαντικά σημεία
-του πηγαίου κώδικα. 
+* Im Allgemeinen müssen die Kommentare im Quellcode beschreiben **WAS** und
+nicht **WIE** sie machen.
+* Die besten Kommentare im Quellcode ist der Quellcode selbst. Aus diesem
+Grund muss sich der Quellcode von selbst belegen. Es ist besser, dass etwas
+durch den Quellcode an und für sich erklärt wird (z.B. durch den Gebrauch
+irgendeines komplexen Variablennamens), anstatt später Kommentare zu
+gebrauchen, die erklären, wozu die Quellcode dient.
+* Kommentaren müssen in:
+  1. komplexe, 
+  1. nicht offenkundige, 
+  1. interessante oder
+  1. wichtige Quellcodestellen aufgestellt werden.
 
-Πριν από αυτά τα σημεία θα πρέπει να τοποθετούνται μικρά σχόλια τα οποία
-επεξηγούν τί κάνει ο κώδικας. Παραδείγματος χάρη: 
+Vor diesen Stellen müssen kleine Kommentare aufgestellt werden, die
+erläutern, was der Quellcode tut. Zum Beispiel: 
 
 [include](../../code_examples/documentation_comments.cpp)
 
-* Αν τα σχόλια εκτείνονται σε αρκετές γραμμές, μπορεί η στοίχιση τους να τα
-κάνει πιο ευανάγνωστα. Παραδείγματος χάρη:
+* Wenn sich die Kommentare in ziemlich vielen Linien ausstrecken, kann sie
+die Ausrichtung leichter lesbar machen.  Zum Beispiel:
 
 [include](../../code_examples/documentation_comments_2.cpp)
 
-## Σχόλια οντοτήτων
+## Entitätskommentare
 
-Η παρακάτω ενότητα αναφέρει μερικούς από τους πιο διαδεδομένους τρόπους που
-χρησιμοποιούνται για να σχολιάσουν τις οντότητες του πηγαίου κώδικα.
+In diesem Kapitel erwähnt einige von den verbreitetesten Arten, die gebraucht werden, um die Quellcodeentitäten zu erläutern. 
 
-### Αρχεία
+### Programmdateien
 
-* Κάθε αρχείο πρέπει να περιέχει την άδεια χρήσης του πηγαίου κώδικα (π.χ.
-Apache 2.0, BSD, LGPL, GPL). Η επιλογή της κατάλληλης άδειας χρήσης είναι
-πολύπλοκη διαδικασία η οποία όμως δεν πρέπει να αμελείται.
-* Πρέπει να περιέχεται ο συγγραφέας του πηγαίου.
-* Κάθε αρχείο πρέπει να έχει ένα σχόλιο το οποίο περιγράφει τα περιεχόμενα
-του.
+* Jede Datei muss die Quellcodelizenz enthalten (z.B. Apache 2.0, BSD, LGPL,
+GPL). Die Lizenzauswahl ist sehr eine komplexe Prozedur, die dennoch nicht
+vernachlässigt werden muss.
+* Der Quellcodeautor muss enthalten werden.
+* Jede Datei muss einen Kommentar haben, der ihre Inhalte beschreibt. 
 
 [include](../../code_examples/documentation_files.cpp)
 
-### Μεταβλητές
+### Variablen
 
-* Σε γενικές γραμμές το όνομα μίας μεταβλητής θα πρέπει να είναι αρκετά
-περιγραφικό ώστε να δίνει την δυνατότητα στον προγραμματιστή να καταλάβει
-για ποιο λόγο χρησιμοποιείται η συγκεκριμένη μεταβλητή. Σε ορισμένες
-περιπτώσεις, μερικά παραπάνω σχόλια χρειάζονται.
+* Im Allgemeinen muss der Variablenname ziemlich  beschreibend sein, so dass
+er dem Entwickler die Möglichkeit gibt, zu verstehen, aus welchem Grund die
+gewisse Variable gebraucht wird. In bestimmten Fällen braucht man noch einige
+Kommentare. 
 
 [include](../../code_examples/documentation_variables.cpp)
 
-### Συναρτήσεις(1)
+### Funktionen (1)
 
-* Κάθε δήλωση συνάρτησης θα πρέπει να έχει σχόλια τα οποία προηγούνται της
-συνάρτησης και περιγράφουν τί κάνει η συνάρτηση και πως να χρησιμοποιείται.
-Γενικά τα σχόλια στην δήλωση μίας συνάρτησης περιγράφουν την χρήση της
-συνάρτησης, ενώ τα σχόλια στην υλοποίηση μίας συνάρτησης περιγράφουν την
-λειτουργίας της.
-* Κατά την δήλωση μίας συνάρτησης πρέπει να αναφέρονται: 
-  * Οι μεταβλητές εισόδου και οι μεταβλητές που επιστρέφει η συνάρτηση.
-  *  Εάν η συνάρτηση δεσμεύει μνήμη την οποία ο προγραμματιστής θα πρέπει να
-την αποδεσμεύσει (αυτό ισχύει σε γλώσσες που δεν έχουν συλλογή απορριμάτων
-(αγγλ. garbage collection) όπως η C++).
+* Jede Funktionsdeklaration muss Kommentare haben, die der Funktion
+vorausgehen und beschreiben, was die Funktion macht und wie sie gebraucht
+wird. Im Allgemeinen beschreiben die Kommentare über der Funktionsdeklaration
+den Gebrauch einer Funktion, während die Kommentare in der
+Funktionsrealisierung deren Funktionsrolle beschreiben.
+* Bei der Funktionsdeklaration müssen folgende Punkte erwähnt werden:
+  * Die Eingabevariablen und die Variablen, die die Funktion zurückgibt.
+  * Wenn die Funktion Speicher einnimmt, den der Entwickler frei machen muss
+(Das ist der Fall in Programmsprachen, wobei sie keinen Speicherabfallsammler
+besitzen (Εngl. garbage collection), wie C++). 
   * Εάν κάποια από τις μεταβλητές εισόδου ή εξόδου θα πρέπει να είναι
 δείκτης στο κενό. 
   * Εάν υπάρχει οποιαδήποτε επίπτωση στην απόδοση με την χρησιμοποίηση της
