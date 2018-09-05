@@ -16,7 +16,8 @@
 	"bibtex-cite",
 	"image-captions",
 	"include-codeblock","ace",
-	"insert-logo"
+	"insert-logo",
+	"footer-sdluniandes"
     ],
     "pluginsConfig": {
         "richquotes": {
@@ -45,6 +46,12 @@
 	"insert-logo": {
             "url": "../../images/coding_style.png",
             "style": "background: none;"
+        },
+        "footer-sdluniandes": {
+            "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+            "licenseImage": "https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png",
+	    "licenseLink": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+	    "text": ""
         }
     }
 }
